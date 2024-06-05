@@ -23,6 +23,7 @@ class LoginTVCell: UITableViewCell {
     var onAddPassword:((_ password : String)->Void)?
     var hidePassword = true
     var onCLickLogin:(()-> Void)?
+    var onClickSignUp:(()-> Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
         self.uvPassword.layer.cornerRadius = 8.0
@@ -42,6 +43,9 @@ class LoginTVCell: UITableViewCell {
     
     @IBAction func btnLoginTap(_ sd : UIButton) {
         self.onCLickLogin?()
+    }
+    @IBAction func btnSignUpTap(_ sd : UIButton) {
+        self.onClickSignUp?()
     }
     
     @IBAction func btnHideShowPassTap(_ sd : UIButton) {

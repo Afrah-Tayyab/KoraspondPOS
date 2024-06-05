@@ -24,8 +24,4 @@ class LoginVC: UIViewController {
         self.tblViewLogin.dataSource = self
         tblViewLogin.register(UINib(nibName: "LoginTVCell", bundle: nil), forCellReuseIdentifier: "LoginTVCell")
     }
-    @IBAction func btnTapBack(_ sd : UIButton){
-        self.navigationController?.popViewController(animated: true)
-    }
-
 }

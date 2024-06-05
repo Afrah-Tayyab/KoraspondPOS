@@ -37,24 +37,10 @@
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRO-DY-Qnq">
-                                                <rect key="frame" x="8" y="10" width="40" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="b64-Se-vYj"/>
-                                                    <constraint firstAttribute="height" constant="40" id="yvc-RL-lL1"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="arrow"/>
-                                                <connections>
-                                                    <action selector="btnTapBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Jhg-oO-mbu"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="uRO-DY-Qnq" firstAttribute="leading" secondItem="5Pg-Am-xlk" secondAttribute="leading" constant="8" id="H35-Eb-8l2"/>
                                             <constraint firstItem="kHT-WQ-VBp" firstAttribute="centerX" secondItem="5Pg-Am-xlk" secondAttribute="centerX" id="aEv-Fo-Y5y"/>
-                                            <constraint firstItem="uRO-DY-Qnq" firstAttribute="centerY" secondItem="5Pg-Am-xlk" secondAttribute="centerY" id="d5d-9q-PYL"/>
                                             <constraint firstAttribute="height" constant="60" id="qLT-vC-8ln"/>
                                             <constraint firstItem="kHT-WQ-VBp" firstAttribute="centerY" secondItem="5Pg-Am-xlk" secondAttribute="centerY" id="tVz-e6-RJA"/>
                                         </constraints>
@@ -191,7 +177,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow" width="21.333333969116211" height="21.333333969116211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

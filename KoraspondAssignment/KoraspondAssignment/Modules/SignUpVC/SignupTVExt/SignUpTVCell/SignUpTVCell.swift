@@ -29,6 +29,7 @@ class SignUpTVCell: UITableViewCell {
     
     var hidePassword = true
     var onClickSignup:(()-> Void)?
+    var onClickLogin:(()-> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,6 +46,9 @@ class SignUpTVCell: UITableViewCell {
     }
     @IBAction func btnSignUpTap(_ sd : UIButton) {
         self.onClickSignup?()
+    }
+    @IBAction func btnLoginTap(_ sd : UIButton) {
+        self.onClickLogin?()
     }
     
     @IBAction func btnHideShowPassTap(_ sd : UIButton) {

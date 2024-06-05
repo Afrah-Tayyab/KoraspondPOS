@@ -65,6 +65,7 @@
 		E6F8606A2C10E9A900721D8E /* SignUpTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F860682C10E9A900721D8E /* SignUpTVCell.xib */; };
 		E6F8606D2C10E9DC00721D8E /* SignupTVExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8606C2C10E9DC00721D8E /* SignupTVExt.swift */; };
 		E6F860702C10EDE100721D8E /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */; };
+		E6F860732C10FB9200721D8E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860722C10FB9200721D8E /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,7 @@
 		E6F860682C10E9A900721D8E /* SignUpTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpTVCell.xib; sourceTree = "<group>"; };
 		E6F8606C2C10E9DC00721D8E /* SignupTVExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTVExt.swift; sourceTree = "<group>"; };
 		E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		E6F860722C10FB9200721D8E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 				E6026FAC2C0F85CB00011189 /* ItemListing */,
 				E6026FAF2C0F867200011189 /* CartVC */,
 				E6F860362C1056CD00721D8E /* Checkout */,
+				E6F860712C10FB7600721D8E /* Profile */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -615,6 +618,14 @@
 				E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */,
 			);
 			path = SignUpViewModel;
+			sourceTree = "<group>";
+		};
+		E6F860712C10FB7600721D8E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860722C10FB9200721D8E /* ProfileVC.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -894,6 +905,7 @@
 				E6F860652C10E93000721D8E /* SignUpVC.swift in Sources */,
 				E6F860352C1048FC00721D8E /* CartItemModel.swift in Sources */,
 				E6F860622C10E01500721D8E /* LoginTVExt.swift in Sources */,
+				E6F860732C10FB9200721D8E /* ProfileVC.swift in Sources */,
 				E6026FA82C0F4D0E00011189 /* InventoryVeiwModel.swift in Sources */,
 				E6026FCE2C0FC14900011189 /* ItemlistingTVCell.swift in Sources */,
 				E6026FB42C0F889B00011189 /* SplashVC.swift in Sources */,

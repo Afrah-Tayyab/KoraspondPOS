@@ -44,13 +44,16 @@ extension LoginVC : UITableViewDelegate, UITableViewDataSource {
                 }
             }
         }
-       
+        cell.onClickSignUp = {
+            self.pushToSignup()
+        }
+        
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 430.0
+        return 460.0
     }
 }
 
@@ -62,5 +65,11 @@ extension LoginVC {
             UIApplication.shared.windows.first?.rootViewController = vc
             UIApplication.shared.windows.first?.makeKeyAndVisible()
         }
+    }
+    func pushToSignup() {
+        let storyBoard = UIStoryboard(name: "Auth", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
+        UIApplication.shared.windows.first?.rootViewController = vc
+        UIApplication.shared.windows.first?.makeKeyAndVisible()
     }
 }

@@ -11,15 +11,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="430" id="KGk-i7-Jjw" customClass="LoginTVCell" customModule="KoraspondAssignment" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="459" id="KGk-i7-Jjw" customClass="LoginTVCell" customModule="KoraspondAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-Na-2EK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="430"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom to Koraspond POS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYJ-dc-9VO">
                                 <rect key="frame" x="10" y="30" width="300" height="21"/>
@@ -53,7 +53,7 @@
                                             <constraint firstAttribute="height" constant="42" id="nra-Mx-ZP2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-3p-7Eh">
                                         <rect key="frame" x="257" y="0.0" width="35" height="42"/>
@@ -93,20 +93,38 @@
                                     <action selector="btnLoginTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Dv9-F5-S64"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-Vb-v9z">
+                                <rect key="frame" x="10" y="407" width="300" height="42"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="dDy-XE-x4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Don't have account? Signup">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnSignUpTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ucF-8Y-7ea"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="rzq-Vb-v9z" firstAttribute="top" secondItem="uEX-cz-ydl" secondAttribute="bottom" constant="10" id="90M-vx-RKB"/>
                             <constraint firstItem="uEX-cz-ydl" firstAttribute="leading" secondItem="SBv-Z2-yCZ" secondAttribute="leading" id="9Gl-6s-q9D"/>
+                            <constraint firstItem="rzq-Vb-v9z" firstAttribute="trailing" secondItem="uEX-cz-ydl" secondAttribute="trailing" id="C9P-L2-46a"/>
                             <constraint firstItem="JvL-80-im4" firstAttribute="leading" secondItem="FAK-86-E8j" secondAttribute="leading" id="Dnl-OE-adE"/>
                             <constraint firstItem="SBv-Z2-yCZ" firstAttribute="trailing" secondItem="JvL-80-im4" secondAttribute="trailing" id="HV5-FA-YMC"/>
                             <constraint firstItem="BYJ-dc-9VO" firstAttribute="top" secondItem="zpB-Na-2EK" secondAttribute="top" constant="30" id="JpY-o3-eLE"/>
                             <constraint firstItem="uEX-cz-ydl" firstAttribute="trailing" secondItem="SBv-Z2-yCZ" secondAttribute="trailing" id="PII-Tg-Zt4"/>
                             <constraint firstAttribute="trailing" secondItem="BYJ-dc-9VO" secondAttribute="trailing" constant="10" id="QE8-ks-RGt"/>
                             <constraint firstItem="uEX-cz-ydl" firstAttribute="top" secondItem="SBv-Z2-yCZ" secondAttribute="bottom" constant="30" id="QiK-32-vvW"/>
+                            <constraint firstAttribute="bottom" secondItem="rzq-Vb-v9z" secondAttribute="bottom" constant="10" id="Rwf-0c-q2K"/>
                             <constraint firstItem="FAK-86-E8j" firstAttribute="trailing" secondItem="YQz-dL-HjY" secondAttribute="trailing" id="VmL-xD-I6A"/>
                             <constraint firstItem="YQz-dL-HjY" firstAttribute="trailing" secondItem="BYJ-dc-9VO" secondAttribute="trailing" id="YpA-65-htV"/>
-                            <constraint firstAttribute="bottom" secondItem="uEX-cz-ydl" secondAttribute="bottom" constant="33" id="a8t-Xm-oy6"/>
                             <constraint firstItem="SBv-Z2-yCZ" firstAttribute="top" secondItem="JvL-80-im4" secondAttribute="bottom" constant="16" id="en6-En-mmI"/>
+                            <constraint firstItem="rzq-Vb-v9z" firstAttribute="leading" secondItem="uEX-cz-ydl" secondAttribute="leading" id="f8T-rj-iHi"/>
                             <constraint firstItem="SBv-Z2-yCZ" firstAttribute="leading" secondItem="JvL-80-im4" secondAttribute="leading" id="foz-U9-loR"/>
                             <constraint firstItem="YQz-dL-HjY" firstAttribute="leading" secondItem="BYJ-dc-9VO" secondAttribute="leading" id="jWI-Gw-dZL"/>
                             <constraint firstItem="BYJ-dc-9VO" firstAttribute="leading" secondItem="zpB-Na-2EK" secondAttribute="leading" constant="10" id="kj6-un-TMx"/>
@@ -134,7 +152,7 @@
                 <outlet property="tfPassword" destination="rEJ-JW-6Qv" id="sgg-i8-JE0"/>
                 <outlet property="uvPassword" destination="SBv-Z2-yCZ" id="iMT-Sr-zAy"/>
             </connections>
-            <point key="canvasLocation" x="-41.221374045801525" y="134.50704225352112"/>
+            <point key="canvasLocation" x="-41.221374045801525" y="143.3098591549296"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -71,4 +71,8 @@ class UserDefault : NSObject {
         guard let userValue = UserDefaults.standard.value(forKey: "isUserLogin") as? Bool else {return false}
         return userValue
     }
+    
+    static func removeUserObject() {
+        UserDefaults.standard.removeObject(forKey: "userModel")
+    }
 }
