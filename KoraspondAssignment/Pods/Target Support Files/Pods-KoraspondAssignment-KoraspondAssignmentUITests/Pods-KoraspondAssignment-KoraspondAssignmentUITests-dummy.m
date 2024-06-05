@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_KoraspondAssignment_KoraspondAssignmentUITests : NSObject
+@end
+@implementation PodsDummy_Pods_KoraspondAssignment_KoraspondAssignmentUITests
+@end

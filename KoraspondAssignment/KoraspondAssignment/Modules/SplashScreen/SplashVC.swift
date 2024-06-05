@@ -1,0 +1,23 @@
+//
+//  SplashVC.swift
+//  KoraspondAssignment
+//
+//  Created by Cartlow on 04/06/2024.
+//
+
+import UIKit
+
+class SplashVC: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "TabBarVC")
+            UIApplication.shared.windows.first?.rootViewController = vc
+            UIApplication.shared.windows.first?.makeKeyAndVisible()
+        }
+    }
+
+}

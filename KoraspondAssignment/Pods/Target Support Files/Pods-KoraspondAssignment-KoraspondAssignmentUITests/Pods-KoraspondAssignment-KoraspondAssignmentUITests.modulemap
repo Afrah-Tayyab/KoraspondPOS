@@ -1,0 +1,6 @@
+framework module Pods_KoraspondAssignment_KoraspondAssignmentUITests {
+  umbrella header "Pods-KoraspondAssignment-KoraspondAssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
