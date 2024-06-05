@@ -43,9 +43,16 @@ class CoreDataManager {
         }
     }
     //delete the item from the database
-    func deleteInventory(inventoryEntity : InventoryEntity) {
+    func deleteInventory(inventoryEntity : InventoryEntity,completion: @escaping (UpdateResponse) -> Void) {
+        //also delete this item from cart as we are going to delete it from inventory
+        let cartList = UserDefault.loadCart()
+        print("cartList First Time ==== \(cartList.count)")
+        let filterItemList = cartList.filter({$0.id != inventoryEntity.id})
+        UserDefault.saveToCart(list: filterItemList)
+        //now delete item from Database
         context.delete(inventoryEntity)
         saveContext()
+        completion(.success)
     }
 
 //MARK: -  fetch the list of items

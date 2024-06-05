@@ -17,6 +17,7 @@ class InventoryVeiwModel {
 //MARK: - Helping functions
 // get the list of items that are in inventory list
     func getItemList(completion: @escaping (UpdateResponse) -> Void) {
+        self.inventoryListing.removeAll()
         self.inventoryListing = self.manager.fetchInventoryItems()
         if self.inventoryListing.count == 0 {
             completion(.noData)
@@ -30,8 +31,15 @@ class InventoryVeiwModel {
         manager.updateInventory(inventoryData: itemData, inventoryEntity: inventoryEntity)
     }
     
-    func deleteInventory(inventoryEntity : InventoryEntity) {
-        manager.deleteInventory(inventoryEntity: inventoryEntity)
+    func deleteInventory(inventoryEntity : InventoryEntity,completion: @escaping (UpdateResponse) -> Void) {
+        manager.deleteInventory(inventoryEntity: inventoryEntity) { result in
+            switch result {
+            case .noData:
+                break
+            case .success:
+                completion(.success)
+            }
+        }
     }
     
 }

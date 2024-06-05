@@ -41,9 +41,16 @@ extension InventoryManagementVC {
         }
         
         cell.onClickDelete = {
-            print("delete inventory")
+            //delete item from inventory
             let inventoryData = self.inventoryViewModel.inventoryListing[index_Path]
-            self.inventoryViewModel.deleteInventory(inventoryEntity: inventoryData)
+            self.inventoryViewModel.deleteInventory(inventoryEntity: inventoryData) { result in
+                switch result {
+                case .noData:
+                    break
+                case .success:
+                    self.getInventoryList()
+                }
+            }
         }
     }
     
