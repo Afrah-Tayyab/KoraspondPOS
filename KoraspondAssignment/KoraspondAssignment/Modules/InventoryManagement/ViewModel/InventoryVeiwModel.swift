@@ -12,12 +12,14 @@ class InventoryVeiwModel {
 //MARK: - Properties
     private let manager =  CoreDataManager()
     var inventoryListing: [InventoryEntity] = []
-    
+    var filterInventoryListing: [InventoryEntity] = []
 //MARK: - Helping functions
 // get the list of items that are in inventory list
     func getItemList(completion: @escaping (UpdateResponse) -> Void) {
         self.inventoryListing.removeAll()
+        self.filterInventoryListing.removeAll()
         self.inventoryListing = self.manager.fetchInventoryItems()
+        self.filterInventoryListing = self.inventoryListing
         if self.inventoryListing.count == 0 {
             completion(.noData)
         }else{

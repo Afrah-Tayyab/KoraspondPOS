@@ -13,6 +13,7 @@ class InventoryManagementVC: UIViewController {
     @IBOutlet weak var tblViewInventory: UITableView!
     @IBOutlet weak var lblNoData: UILabel!
     @IBOutlet weak var btnAddItem: UIButton!
+    @IBOutlet weak var tfSearch: UITextField!
     //MARK: -  Properties
     let inventoryViewModel = InventoryVeiwModel()
     
@@ -21,6 +22,7 @@ class InventoryManagementVC: UIViewController {
         super.viewDidLoad()
         // styling to button
         self.btnAddItem.layer.cornerRadius = 8.0
+        tfSearch.delegate = self
         self.setUpTblView()
     }
     
@@ -60,3 +62,25 @@ class InventoryManagementVC: UIViewController {
         self.navigationController?.pushViewController(vc!, animated: true)
     }
 }
+
+extension InventoryManagementVC : UITextFieldDelegate{
+    // UITextFieldDelegate Method
+        func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+            // Combine the current text with the new text
+            let currentText = tfSearch.text ?? ""
+            guard let stringRange = Range(range, in: currentText) else { return false }
+            let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+            // Filter the items based on the updated text
+            if updatedText.isEmpty {
+                self.inventoryViewModel.filterInventoryListing = self.inventoryViewModel.inventoryListing
+            } else {
+                self.inventoryViewModel.filterInventoryListing = self.inventoryViewModel.inventoryListing.filter { $0.itemName?.lowercased().contains(updatedText.lowercased()) ?? true }
+            }
+            
+            // Reload the table view
+            tblViewInventory.reloadData()
+            return true
+        }
+        
+}
+

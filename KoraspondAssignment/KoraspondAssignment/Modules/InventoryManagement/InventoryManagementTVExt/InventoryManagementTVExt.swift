@@ -11,7 +11,7 @@ import UIKit
 //MARK: - TableView Delegates and Datasources
 extension InventoryManagementVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.inventoryViewModel.inventoryListing.count
+        return self.inventoryViewModel.filterInventoryListing.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,16 +30,16 @@ extension InventoryManagementVC : UITableViewDelegate, UITableViewDataSource {
 //MARK: -  TableView Helping fuunctions
 extension InventoryManagementVC {
     func setupCellForRowAt(cell : InventoryListingTVCell, index_Path : Int) {
-        cell.setItemData(itemData: self.inventoryViewModel.inventoryListing[index_Path])
+        cell.setItemData(itemData: self.inventoryViewModel.filterInventoryListing[index_Path])
         cell.onClickEdit = {
             //edit the item
-            let iventoryEntity = self.inventoryViewModel.inventoryListing[index_Path]
+            let iventoryEntity = self.inventoryViewModel.filterInventoryListing[index_Path]
             self.pushToEditItem(inventoryEntity: iventoryEntity)
         }
         
         cell.onClickDelete = {
             //delete item from inventory
-            let inventoryData = self.inventoryViewModel.inventoryListing[index_Path]
+            let inventoryData = self.inventoryViewModel.filterInventoryListing[index_Path]
             self.inventoryViewModel.deleteInventory(inventoryEntity: inventoryData) { result in
                 switch result {
                 case .noData:

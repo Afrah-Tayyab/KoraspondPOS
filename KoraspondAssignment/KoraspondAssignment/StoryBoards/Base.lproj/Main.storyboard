@@ -145,7 +145,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnAddItemTap:" destination="eoF-hI-CX3" eventType="touchUpInside" id="tqT-0w-UHw"/>
                                             <action selector="btnPushToCheckOutTap:" destination="SGK-XV-ity" eventType="touchUpInside" id="QlS-b9-BeW"/>
                                         </connections>
                                     </button>
@@ -304,7 +303,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aZE-zt-wLd">
-                                        <rect key="frame" x="0.0" y="60" width="393" height="573"/>
+                                        <rect key="frame" x="0.0" y="110" width="393" height="523"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bau-Jm-AON">
@@ -322,11 +321,21 @@
                                             <action selector="btnAddItemTap:" destination="eoF-hI-CX3" eventType="touchUpInside" id="wCi-Ba-c6U"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search in inventory" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lK6-9b-QgV">
+                                        <rect key="frame" x="16" y="65" width="361" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="p0j-1f-Vh3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="aZE-zt-wLd" firstAttribute="top" secondItem="lK6-9b-QgV" secondAttribute="bottom" constant="5" id="4ex-Ec-J2g"/>
                                     <constraint firstAttribute="bottom" secondItem="bau-Jm-AON" secondAttribute="bottom" constant="30" id="4fV-7d-AMG"/>
                                     <constraint firstItem="aZE-zt-wLd" firstAttribute="leading" secondItem="VqY-t2-f1G" secondAttribute="leading" id="87P-LM-VmQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="lK6-9b-QgV" secondAttribute="trailing" constant="16" id="9bA-JI-9Zs"/>
                                     <constraint firstItem="VqY-t2-f1G" firstAttribute="leading" secondItem="yCu-yi-n7b" secondAttribute="leading" id="CsR-1A-Pkw"/>
                                     <constraint firstItem="bau-Jm-AON" firstAttribute="top" secondItem="aZE-zt-wLd" secondAttribute="bottom" constant="5" id="GBk-v4-Nna"/>
                                     <constraint firstItem="VqY-t2-f1G" firstAttribute="top" secondItem="yCu-yi-n7b" secondAttribute="top" id="Hfx-Ui-OMz"/>
@@ -334,11 +343,12 @@
                                     <constraint firstItem="bau-Jm-AON" firstAttribute="centerX" secondItem="yCu-yi-n7b" secondAttribute="centerX" id="Wuz-z3-DtX"/>
                                     <constraint firstItem="zdF-V4-PPw" firstAttribute="leading" secondItem="yCu-yi-n7b" secondAttribute="leading" constant="10" id="be0-bV-SZA"/>
                                     <constraint firstItem="zdF-V4-PPw" firstAttribute="centerY" secondItem="yCu-yi-n7b" secondAttribute="centerY" id="cEz-cX-Iuc"/>
-                                    <constraint firstItem="aZE-zt-wLd" firstAttribute="top" secondItem="VqY-t2-f1G" secondAttribute="bottom" id="eLE-9a-GLf"/>
+                                    <constraint firstItem="lK6-9b-QgV" firstAttribute="top" secondItem="VqY-t2-f1G" secondAttribute="bottom" constant="5" id="dQa-Ou-y7F"/>
                                     <constraint firstItem="aZE-zt-wLd" firstAttribute="trailing" secondItem="VqY-t2-f1G" secondAttribute="trailing" id="eZK-gd-HFS"/>
                                     <constraint firstItem="zdF-V4-PPw" firstAttribute="centerX" secondItem="yCu-yi-n7b" secondAttribute="centerX" id="hmQ-md-ybP"/>
                                     <constraint firstAttribute="trailing" secondItem="VqY-t2-f1G" secondAttribute="trailing" id="i8q-dH-gLK"/>
                                     <constraint firstAttribute="trailing" secondItem="zdF-V4-PPw" secondAttribute="trailing" constant="10" id="sSR-eX-gEv"/>
+                                    <constraint firstItem="lK6-9b-QgV" firstAttribute="leading" secondItem="yCu-yi-n7b" secondAttribute="leading" constant="16" id="wyH-Sv-LWC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -356,6 +366,7 @@
                         <outlet property="btnAddItem" destination="bau-Jm-AON" id="xSu-NO-7C2"/>
                         <outlet property="lblNoData" destination="zdF-V4-PPw" id="FQk-R7-l9a"/>
                         <outlet property="tblViewInventory" destination="aZE-zt-wLd" id="TDP-Pp-y1e"/>
+                        <outlet property="tfSearch" destination="lK6-9b-QgV" id="qet-yQ-Zc6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSo-w5-Sco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -605,7 +616,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnAddItemTap:" destination="eoF-hI-CX3" eventType="touchUpInside" id="3ai-1l-d1a"/>
                                             <action selector="btnLogout:" destination="kF9-f8-Gvh" eventType="touchUpInside" id="PaQ-Vj-oLr"/>
                                             <action selector="btnPushToCheckOutTap:" destination="SGK-XV-ity" eventType="touchUpInside" id="M6q-hc-S01"/>
                                         </connections>
@@ -830,7 +840,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnAddItemTap:" destination="eoF-hI-CX3" eventType="touchUpInside" id="JQm-od-oCT"/>
                                             <action selector="btnPlaceOrderTap:" destination="679-B2-F1i" eventType="touchUpInside" id="6jY-uW-Nvh"/>
                                         </connections>
                                     </button>

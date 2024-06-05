@@ -12,14 +12,11 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     func showAlert(title : String, message : String, btnOne : String, btnTwo : String){
-
             // create the alert
             let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-
             // add the actions (buttons)
             alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: nil))
             alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
