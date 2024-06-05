@@ -38,7 +38,7 @@ class ItemListingVC: UIViewController {
         self.itemListingViewModel.getItemList { result in
             switch result {
             case .noData:
-                print("no data found")
+                //no data 
                 self.tblViewItemListing.isHidden = true
                 self.lblNoData.isHidden = false
             case .success:

@@ -37,4 +37,38 @@ class UserDefault : NSObject {
     static func removeCartList() {
         UserDefaults.standard.removeObject(forKey: "cartList")
     }
+    
+    static func saveLoginUser(userModel: LoginModel){
+        do {
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(userModel)
+            UserDefaults.standard.set(data, forKey: "userModel")
+        } catch {
+            print("got an error ==== \(error)")
+        }
+    }
+    
+    static func loadLoginUser()-> LoginModel{
+        var result: LoginModel = LoginModel()
+        if let data = UserDefaults.standard.data(forKey: "userModel") {
+            do {
+                let decoder = JSONDecoder()
+                let notes = try decoder.decode(LoginModel.self, from: data)
+                result = notes
+            } catch {
+                print("Unable to Decode result (\(error))")
+            }
+        }
+        return result
+    }
+    
+    static func saveIsUserLogin(isUserLogin: Bool) {
+        UserDefaults.standard.set(isUserLogin, forKey: "isUserLogin")
+        UserDefaults.standard.synchronize()
+    }
+    
+    static func getIsUserLogin() -> Bool {
+        guard let userValue = UserDefaults.standard.value(forKey: "isUserLogin") as? Bool else {return false}
+        return userValue
+    }
 }

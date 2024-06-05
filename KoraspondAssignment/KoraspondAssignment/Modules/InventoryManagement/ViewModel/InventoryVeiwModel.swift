@@ -10,7 +10,6 @@ import UIKit
 
 class InventoryVeiwModel {
 //MARK: - Properties
-    private weak var navigationController: UINavigationController?
     private let manager =  CoreDataManager()
     var inventoryListing: [InventoryEntity] = []
     

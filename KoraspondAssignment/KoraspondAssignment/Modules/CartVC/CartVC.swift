@@ -41,7 +41,7 @@ class CartVC: UIViewController {
         self.cartViewModel.getCartList { result in
             switch result {
             case .noData:
-                print("no data found")
+                //no data 
                 self.tblViewCartListing.isHidden = true
                 self.btnCheckout.isHidden = true
                 self.lblNoData.isHidden = false

@@ -47,7 +47,7 @@ class CheckoutVC: UIViewController {
         self.checkoutViewModel.getCartList { result in
             switch result {
             case .noData:
-                print("no data found")
+                //no data 
                 self.tblViewCheckout.isHidden = true
                 self.lblNoData.isHidden = false
                 self.uvTotalView.isHidden = true

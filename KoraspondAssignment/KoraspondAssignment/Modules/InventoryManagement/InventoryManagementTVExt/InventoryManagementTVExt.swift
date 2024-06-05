@@ -32,12 +32,9 @@ extension InventoryManagementVC {
     func setupCellForRowAt(cell : InventoryListingTVCell, index_Path : Int) {
         cell.setItemData(itemData: self.inventoryViewModel.inventoryListing[index_Path])
         cell.onClickEdit = {
-            print("edit inventory")
-            
+            //edit the item
             let iventoryEntity = self.inventoryViewModel.inventoryListing[index_Path]
             self.pushToEditItem(inventoryEntity: iventoryEntity)
-
-            self.getInventoryList()
         }
         
         cell.onClickDelete = {

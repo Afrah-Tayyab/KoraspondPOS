@@ -7,14 +7,6 @@
 
 import Foundation
 
-
-//struct InventoryModel {
-//    let id : Int64
-//    let itemName: String
-//    let itemPrice: Int64
-//    let stockQuantity: Int64
-//}
-
 class InventoryModel : Codable {
     var id : Int64?
     var itemName: String?

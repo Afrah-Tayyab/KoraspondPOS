@@ -34,7 +34,7 @@ class InventoryManagementVC: UIViewController {
         self.inventoryViewModel.getItemList { result in
             switch result {
             case .noData:
-                print("no data found")
+                //no data
                 self.tblViewInventory.isHidden = true
                 self.btnAddItem.isHidden = false
                 self.lblNoData.isHidden = false

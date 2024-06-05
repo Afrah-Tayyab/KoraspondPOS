@@ -53,6 +53,18 @@
 		E6F860492C1079CF00721D8E /* CheckoutTVExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860482C1079CF00721D8E /* CheckoutTVExt.swift */; };
 		E6F8604D2C1079F200721D8E /* CheckoutTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F8604C2C1079F200721D8E /* CheckoutTVCell.xib */; };
 		E6F8604E2C1079F200721D8E /* CheckoutTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8604B2C1079F200721D8E /* CheckoutTVCell.swift */; };
+		E6F860512C10D7CE00721D8E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F860502C10D7CE00721D8E /* Auth.storyboard */; };
+		E6F860552C10D90500721D8E /* LoginTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860532C10D90500721D8E /* LoginTVCell.swift */; };
+		E6F860562C10D90500721D8E /* LoginTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F860542C10D90500721D8E /* LoginTVCell.xib */; };
+		E6F860582C10D91700721D8E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860572C10D91700721D8E /* LoginVC.swift */; };
+		E6F8605D2C10DD7400721D8E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8605C2C10DD7400721D8E /* LoginViewModel.swift */; };
+		E6F860602C10DD8F00721D8E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8605F2C10DD8F00721D8E /* LoginModel.swift */; };
+		E6F860622C10E01500721D8E /* LoginTVExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860612C10E01500721D8E /* LoginTVExt.swift */; };
+		E6F860652C10E93000721D8E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860642C10E93000721D8E /* SignUpVC.swift */; };
+		E6F860692C10E9A900721D8E /* SignUpTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F860672C10E9A900721D8E /* SignUpTVCell.swift */; };
+		E6F8606A2C10E9A900721D8E /* SignUpTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F860682C10E9A900721D8E /* SignUpTVCell.xib */; };
+		E6F8606D2C10E9DC00721D8E /* SignupTVExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8606C2C10E9DC00721D8E /* SignupTVExt.swift */; };
+		E6F860702C10EDE100721D8E /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +141,18 @@
 		E6F860482C1079CF00721D8E /* CheckoutTVExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTVExt.swift; sourceTree = "<group>"; };
 		E6F8604B2C1079F200721D8E /* CheckoutTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTVCell.swift; sourceTree = "<group>"; };
 		E6F8604C2C1079F200721D8E /* CheckoutTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckoutTVCell.xib; sourceTree = "<group>"; };
+		E6F860502C10D7CE00721D8E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		E6F860532C10D90500721D8E /* LoginTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTVCell.swift; sourceTree = "<group>"; };
+		E6F860542C10D90500721D8E /* LoginTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginTVCell.xib; sourceTree = "<group>"; };
+		E6F860572C10D91700721D8E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E6F8605C2C10DD7400721D8E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E6F8605F2C10DD8F00721D8E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		E6F860612C10E01500721D8E /* LoginTVExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTVExt.swift; sourceTree = "<group>"; };
+		E6F860642C10E93000721D8E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E6F860672C10E9A900721D8E /* SignUpTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTVCell.swift; sourceTree = "<group>"; };
+		E6F860682C10E9A900721D8E /* SignUpTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpTVCell.xib; sourceTree = "<group>"; };
+		E6F8606C2C10E9DC00721D8E /* SignupTVExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTVExt.swift; sourceTree = "<group>"; };
+		E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,8 +363,8 @@
 				E6026FBD2C0FAAFD00011189 /* Application */,
 				E6DFD14A2C0F321E00CA36A0 /* HelperClasses */,
 				E6DFD1402C0F293100CA36A0 /* Modules */,
+				E6F8604F2C10D7A400721D8E /* StoryBoards */,
 				E6026FBE2C0FAB5E00011189 /* CoreDataManager */,
-				E6DFD1132C0F251E00CA36A0 /* Main.storyboard */,
 				E6DFD1192C0F252100CA36A0 /* Assets.xcassets */,
 				E6DFD11B2C0F252100CA36A0 /* LaunchScreen.storyboard */,
 				E6DFD11E2C0F252100CA36A0 /* Info.plist */,
@@ -368,6 +392,8 @@
 		E6DFD1402C0F293100CA36A0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E6F860632C10E91B00721D8E /* SignUpVC */,
+				E6F860522C10D8F100721D8E /* LoginVC */,
 				E6026FB22C0F888800011189 /* SplashScreen */,
 				E6026FA92C0F81E100011189 /* TabBar */,
 				E6DFD1412C0F297D00CA36A0 /* AddItem */,
@@ -501,6 +527,96 @@
 			path = CheckTVCell;
 			sourceTree = "<group>";
 		};
+		E6F8604F2C10D7A400721D8E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E6DFD1132C0F251E00CA36A0 /* Main.storyboard */,
+				E6F860502C10D7CE00721D8E /* Auth.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		E6F860522C10D8F100721D8E /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860572C10D91700721D8E /* LoginVC.swift */,
+				E6F8605E2C10DD8200721D8E /* LoginModel */,
+				E6F8605B2C10DD5A00721D8E /* LoginViewModel */,
+				E6F8605A2C10DD4800721D8E /* LoginTVExt */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		E6F860592C10DD3800721D8E /* LoginTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860532C10D90500721D8E /* LoginTVCell.swift */,
+				E6F860542C10D90500721D8E /* LoginTVCell.xib */,
+			);
+			path = LoginTVCell;
+			sourceTree = "<group>";
+		};
+		E6F8605A2C10DD4800721D8E /* LoginTVExt */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860612C10E01500721D8E /* LoginTVExt.swift */,
+				E6F860592C10DD3800721D8E /* LoginTVCell */,
+			);
+			path = LoginTVExt;
+			sourceTree = "<group>";
+		};
+		E6F8605B2C10DD5A00721D8E /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8605C2C10DD7400721D8E /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		E6F8605E2C10DD8200721D8E /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8605F2C10DD8F00721D8E /* LoginModel.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		E6F860632C10E91B00721D8E /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860642C10E93000721D8E /* SignUpVC.swift */,
+				E6F8606E2C10EDD200721D8E /* SignUpViewModel */,
+				E6F860662C10E98700721D8E /* SignupTVExt */,
+			);
+			path = SignUpVC;
+			sourceTree = "<group>";
+		};
+		E6F860662C10E98700721D8E /* SignupTVExt */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8606C2C10E9DC00721D8E /* SignupTVExt.swift */,
+				E6F8606B2C10E9C300721D8E /* SignUpTVCell */,
+			);
+			path = SignupTVExt;
+			sourceTree = "<group>";
+		};
+		E6F8606B2C10E9C300721D8E /* SignUpTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				E6F860672C10E9A900721D8E /* SignUpTVCell.swift */,
+				E6F860682C10E9A900721D8E /* SignUpTVCell.xib */,
+			);
+			path = SignUpTVCell;
+			sourceTree = "<group>";
+		};
+		E6F8606E2C10EDD200721D8E /* SignUpViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8606F2C10EDE100721D8E /* SignUpViewModel.swift */,
+			);
+			path = SignUpViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -610,6 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F860512C10D7CE00721D8E /* Auth.storyboard in Resources */,
 				E6DFD1462C0F2B8B00CA36A0 /* AddItemTVCell.xib in Resources */,
 				E6DFD11A2C0F252100CA36A0 /* Assets.xcassets in Resources */,
 				E6DFD11D2C0F252100CA36A0 /* Base in Resources */,
@@ -617,7 +734,9 @@
 				E6026FCD2C0FC14900011189 /* ItemlistingTVCell.xib in Resources */,
 				E6026FBB2C0F91B000011189 /* InventoryListingTVCell.xib in Resources */,
 				E6DFD1152C0F251E00CA36A0 /* Base in Resources */,
+				E6F8606A2C10E9A900721D8E /* SignUpTVCell.xib in Resources */,
 				E6F8603F2C1059AB00721D8E /* CartTVCell.xib in Resources */,
+				E6F860562C10D90500721D8E /* LoginTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +868,8 @@
 				E6026FAE2C0F85E800011189 /* ItemListingVC.swift in Sources */,
 				E6DFD1432C0F299000CA36A0 /* AddItemVC.swift in Sources */,
 				E6026FC22C0FABD700011189 /* InventoryModel.swift in Sources */,
+				E6F860582C10D91700721D8E /* LoginVC.swift in Sources */,
+				E6F8606D2C10E9DC00721D8E /* SignupTVExt.swift in Sources */,
 				E6DFD1182C0F251E00CA36A0 /* KoraspondAssignment.xcdatamodeld in Sources */,
 				E6F860492C1079CF00721D8E /* CheckoutTVExt.swift in Sources */,
 				E6026FA62C0F4C8F00011189 /* InventoryManagementVC.swift in Sources */,
@@ -757,6 +878,8 @@
 				E6026FB12C0F868000011189 /* CartVC.swift in Sources */,
 				E6D1E8032C10328D0034CC31 /* ItemListModel.swift in Sources */,
 				E6DFD14E2C0F349400CA36A0 /* HelperClass.swift in Sources */,
+				E6F860602C10DD8F00721D8E /* LoginModel.swift in Sources */,
+				E6F8605D2C10DD7400721D8E /* LoginViewModel.swift in Sources */,
 				E6DFD1492C0F31A400CA36A0 /* AddItemTVExtension.swift in Sources */,
 				E6F860432C106AF400721D8E /* CartViewModel.swift in Sources */,
 				E6DFD10E2C0F251E00CA36A0 /* AppDelegate.swift in Sources */,
@@ -768,14 +891,19 @@
 				E6DFD1472C0F2B8B00CA36A0 /* AddItemTVCell.swift in Sources */,
 				E6DFD1102C0F251E00CA36A0 /* SceneDelegate.swift in Sources */,
 				E6026FAB2C0F820600011189 /* TabBarVC.swift in Sources */,
+				E6F860652C10E93000721D8E /* SignUpVC.swift in Sources */,
 				E6F860352C1048FC00721D8E /* CartItemModel.swift in Sources */,
+				E6F860622C10E01500721D8E /* LoginTVExt.swift in Sources */,
 				E6026FA82C0F4D0E00011189 /* InventoryVeiwModel.swift in Sources */,
 				E6026FCE2C0FC14900011189 /* ItemlistingTVCell.swift in Sources */,
 				E6026FB42C0F889B00011189 /* SplashVC.swift in Sources */,
 				E6F860402C1059AB00721D8E /* CartTVCell.swift in Sources */,
+				E6F860692C10E9A900721D8E /* SignUpTVCell.swift in Sources */,
 				E6F860322C10438600721D8E /* UserDefaults.swift in Sources */,
+				E6F860552C10D90500721D8E /* LoginTVCell.swift in Sources */,
 				E6026FB72C0F90F100011189 /* InventoryManagementTVExt.swift in Sources */,
 				E6026FC62C0FBDF500011189 /* ItemListingViewModel.swift in Sources */,
+				E6F860702C10EDE100721D8E /* SignUpViewModel.swift in Sources */,
 				E6026FC42C0FAC4300011189 /* AddItemViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

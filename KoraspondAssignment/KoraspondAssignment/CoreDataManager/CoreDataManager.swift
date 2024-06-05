@@ -12,9 +12,29 @@ class CoreDataManager {
     private var context: NSManagedObjectContext {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }
-
-
     
+//MARK: - Adding User to inventory
+    func registerUser(_ inventoryData: LoginModel) {
+        let inventoryEntity = UserEntity(context: context)
+        
+        inventoryEntity.email = inventoryData.email ?? ""
+        inventoryEntity.firstName = inventoryData.firstName ?? ""
+        inventoryEntity.lastName = inventoryData.lastName ?? ""
+        inventoryEntity.username = inventoryData.username ?? ""
+        inventoryEntity.password = inventoryData.password ?? ""
+        saveContext()
+    }
+//MARK: - Fetch userLists form Database
+    func fetchUserList() -> [UserEntity] {
+        var userList: [UserEntity] = []
+
+        do {
+            userList = try context.fetch(UserEntity.fetchRequest())
+        }catch {
+            print("Fetch user error", error)
+        }
+        return userList
+    }
 //MARK: - Adding item to inventory
     func addInventory(_ inventoryData: InventoryModel) {
         let inventoryEntity = InventoryEntity(context: context)
@@ -34,12 +54,12 @@ class CoreDataManager {
         saveContext()
         
     }
-//MARK: -  save Item to the coreDataDB
+//MARK: -  save Data to the coreDataDB
     func saveContext() {
         do {
-            try context.save() // MIMP
+            try context.save()
         }catch {
-            print("User saving error:", error)
+            print("saving error:", error)
         }
     }
     //delete the item from the database
